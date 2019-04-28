@@ -29,8 +29,8 @@ def ergodic_profit(a,n_1=50, n_2=0.001):
 def main_6(n_1 = 30, n_2 = 0.001):
     profit = np.loadtxt('profit_data/profit.txt')  # 每一类的元素数与平均收益表
     ergodic = np.loadtxt('profit_data/ergodic.txt')  # 每个元素的情况
-    n_1 = 30  # 类中元素数不低于50个
-    n_2 = 0.0008  # 类的平均利润不低于0.001
+    #n_1 = 30  # 类中元素数不低于50个
+    #n_2 = 0.0008  # 类的平均利润不低于0.001
     plt.ion()
     # 总平均收益、总元素个数、分类数
     profit_t = np.sum(np.abs(profit[:, 1]) * profit[:, 0]) / np.sum(profit[:, 0])
